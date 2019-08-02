@@ -1,0 +1,22 @@
+{
+  "name": "react-context-fs",
+  "version": "0.0.1",
+  "description": "Cookie based feature switching using React Context API",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "feature",
+    "switch",
+    "feature",
+    "toggle",
+    "react",
+    "cookie",
+    "context"
+  ],
+  "author": "Laszlo Heves <heves.laszlo@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "js-cookie": "^2.2.0",
+    "react": "^16.8.6"
+  }
+}
