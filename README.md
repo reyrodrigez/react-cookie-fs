@@ -2,9 +2,9 @@
 
 Cookie based feature switching using React Context API
 
-### How to use
+## How to use
 
-#### Installation
+### Installation
 
 install the module using `npm` or `yarn`:
 ```
@@ -14,9 +14,9 @@ npm i react-context-fs --save
 yarn add react-context-fs
 ```
 
-#### In your code
+### In your code
 
-##### Provider
+#### Provider
 
 Import the `<FeatureProvider>` and wrap your components with it. Remember that everything in the `<FeatureProvider>`'s subtree will have access to the list of features.
 ```
@@ -29,7 +29,7 @@ import {FeatureProvider} from 'react-context-fs';
 </FeatureProvider>
 ```
 
-##### Consumer
+#### Consumer
 
 Consumer is the way to retrieve feature data from the provider.
 
@@ -60,7 +60,7 @@ _or Consumer:_
 </FeatureContext.Consumer>
 ```
 
-#### Setting feature cookies
+### Setting feature cookies
 
 The feature cookies can be set by adding query params to the URL:
 
@@ -70,8 +70,8 @@ to remove a feature cookie you have to set the value to `_`:
 
 `https://example.com/?f_myFeature=_`
 
-### Resources
+## Resources
 
-[Feature Toggles (aka Feature Flags) article from Martin Fowler](https://martinfowler.com/articles/feature-toggles.html)
-[React Context API](https://reactjs.org/docs/context.html)
+- [Feature Toggles (aka Feature Flags) article from Martin Fowler](https://martinfowler.com/articles/feature-toggles.html)
+- [React Context API](https://reactjs.org/docs/context.html)
 
