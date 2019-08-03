@@ -1,6 +1,6 @@
 {
   "name": "react-cookie-fs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cookie based feature switching using React Context API",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,14 @@
   ],
   "author": "Laszlo Heves <heves.laszlo@gmail.com>",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reyrodrigez/react-cookie-fs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reyrodrigez/react-cookie-fs.git"
+  },
+  "homepage": "https://github.com/reyrodrigez/react-cookie-fs#readme",
   "dependencies": {
     "jest": "^24.8.0",
     "js-cookie": "^2.2.0",
