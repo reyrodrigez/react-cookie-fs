@@ -39,8 +39,8 @@ const getFeaturesFromCookie = () => {
     .map(cookie => cookie.trim())
     .map(cookie => cookie.split("="))
     .reduce(function (acc, val) {
-      if (val[0] !== '') {
-        const currKey = val[0].substr(2);
+      if (val[0] !== '' && val[0].slice(0, FEATURE_PREFIX.length) === FEATURE_PREFIX) {
+        const currKey = val[0].substr(FEATURE_PREFIX.length);
         acc[currKey] = val[1] === "false" ? false : val[1] === "true" ? true : val[1];
       }
       return acc;
