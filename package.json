@@ -1,5 +1,5 @@
 {
-  "name": "react-context-fs",
+  "name": "react-cookie-fs",
   "version": "0.0.1",
   "description": "Cookie based feature switching using React Context API",
   "main": "index.js",
