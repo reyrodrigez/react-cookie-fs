@@ -3,7 +3,7 @@ const Cookies = require("js-cookie");
 
 const FEATURE_PREFIX = "f_";
 
-function setFeatureCookie(param) {
+const setFeatureCookie = (param) => {
   if (!param.includes('=')) {
     Cookies.set(param, true);
   }
@@ -17,22 +17,23 @@ function setFeatureCookie(param) {
   }
 }
 
-function getFeaturesFromUrl() {
+const getFeaturesFromUrl = () => {
   const urlParams = window.location.search.substr(1);
-
   if (urlParams.includes(FEATURE_PREFIX)) {
     if (urlParams.includes("&")) {
       urlParams
         .split("&")
         .filter(param => param.includes(FEATURE_PREFIX))
-        .map(param => setFeatureCookie(param));
+        .map(param => featureService.setFeatureCookie(param));
     } else {
-      setFeatureCookie(urlParams);
+
+      featureService.setFeatureCookie(urlParams);
     }
   }
+  return false;
 }
 
-function getFeaturesFromCookie() {
+const getFeaturesFromCookie = () => {
   return document.cookie
     .split(";")
     .map(cookie => cookie.trim())
@@ -46,9 +47,18 @@ function getFeaturesFromCookie() {
     }, {});
 }
 
-function getFeatures() {
+const getFeatures = () => {
   getFeaturesFromUrl();
   return getFeaturesFromCookie();
 }
 
+const featureService = {
+  setFeatureCookie,
+  getFeaturesFromUrl,
+  getFeaturesFromCookie,
+  getFeatures
+};
+
 module.exports = React.createContext(getFeatures());
+
+module.exports.featureService = featureService;
