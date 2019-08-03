@@ -59,6 +59,14 @@ const featureService = {
   getFeatures
 };
 
-module.exports = React.createContext(getFeatures());
+const FeatureContext = React.createContext(null);
 
+const FeatureProvider = ({children}) => React.createElement(
+  FeatureContext.Provider,
+  {value: getFeatures()},
+  children
+  );
+  
+module.exports = FeatureContext;
+module.exports.FeatureProvider = FeatureProvider;
 module.exports.featureService = featureService;
