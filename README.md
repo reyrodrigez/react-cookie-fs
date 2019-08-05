@@ -18,7 +18,7 @@ yarn add react-context-fs
 
 #### Provider
 
-Import the `<FeatureProvider>` and wrap your components with it. Remember that everything in the `<FeatureProvider>`'s subtree will have access to the list of features.
+Import the `FeatureProvider` and wrap your components with it. Remember that everything in the `<FeatureProvider>`'s subtree will have access to the list of features.
 ```
 import {FeatureProvider} from 'react-context-fs';
 ```
@@ -33,7 +33,7 @@ import {FeatureProvider} from 'react-context-fs';
 
 Consumer is the way to retrieve feature data from the provider.
 
-__Make sure that the component where use try to consume is in the subtree of the `<FeatureProvider>`.__
+__Make sure that you consume the context in the subtree of the `<FeatureProvider>`.__
 
 Import the context:
 ```
@@ -65,6 +65,8 @@ _or Consumer:_
 The feature cookies can be set by adding query params to the URL:
 
 `https://example.com/?f_myFeature=awesome`
+
+__Notice the `f_` prefix in the url parameter. This will tell the feature service to set a cookie.__
 
 to remove a feature cookie you have to set the value to `_`:
 
