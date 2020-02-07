@@ -8,10 +8,10 @@ Cookie based feature switching using React Context API
 
 install the module using `npm` or `yarn`:
 ```
-npm i react-context-fs --save
+npm i react-cookie-fs --save
 ```
 ```
-yarn add react-context-fs
+yarn add react-cookie-fs
 ```
 
 ### In your code
@@ -20,7 +20,7 @@ yarn add react-context-fs
 
 Import the `FeatureProvider` and wrap your components with it. Remember that everything in the `<FeatureProvider>`'s subtree will have access to the list of features.
 ```
-import {FeatureProvider} from 'react-context-fs';
+import {FeatureProvider} from 'react-cookie-fs';
 ```
 
 ```
@@ -37,7 +37,7 @@ __Make sure that you consume the context in the subtree of the `<FeatureProvider
 
 Import the context:
 ```
-import FeatureContext from 'react-context-fs';
+import FeatureContext from 'react-cookie-fs';
 ```
 
 _using the  Context Hook:_
