@@ -2,6 +2,8 @@
 
 Cookie based feature switching using React Context API
 
+[![](https://img.shields.io/npm/v/react-cookie-fs)](https://www.npmjs.com/package/react-cookie-fs)
+
 ## How to use
 
 ### Installation
