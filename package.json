@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/reyrodrigez/react-cookie-fs#readme",
   "dependencies": {
-    "jest": "^24.8.0",
+    "jest": "^25.1.0",
     "js-cookie": "^2.2.0",
     "react": "^16.8.6"
   },
