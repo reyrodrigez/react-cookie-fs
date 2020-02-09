@@ -4,10 +4,8 @@ import FeatureContext from 'react-cookie-fs'
 
 const Features = () => {
   const features = React.useContext(FeatureContext)
-  console.log(features['scifi']);
   switch (features['scifi']) {
     case 'startrek':
-      console.log('yo');
       return <div className="notification is-warning has-text-centered">
         <span className="icon">
           <i className="fas fa-hand-spock fa-3x"></i>
