@@ -5,10 +5,10 @@ const Main = () =>
     <div id="demo" className="container">
       <h4 className="title is-4">Demo</h4>
       <ol>
-        <li>Switch on your first feature by adding <code>f_scifi=startrek</code> to your url or <a href="/?f_scifi=startrek"><i>click here.</i></a></li>
-        <li>But hey, what if Volcan is not your thing? Switch to <code>f_scifi=starwars</code> by <a href="/?f_scifi=starwars"><i>clicking here</i></a>.</li>
+        <li>Switch on your first feature by adding <code>f_scifi=startrek</code> to your url or <a href="?f_scifi=startrek"><i>click here.</i></a></li>
+        <li>But hey, what if Volcan is not your thing? Switch to <code>f_scifi=starwars</code> by <a href="?f_scifi=starwars"><i>clicking here</i></a>.</li>
         <li>Okay, maybe you're not into sci-fi... Try to remove the query params from the url, let's see if that help.</li>
-        <li>Well, that didn't work, did it? It's because these features are set as cookies. You can delete it by using: <code>f_scifi=_</code> to your url or <a href="/?f_scifi=_"><i>click here.</i></a></li>
+        <li>Well, that didn't work, did it? It's because these features are set as cookies. You can delete it by using: <code>f_scifi=_</code> to your url or <a href="?f_scifi=_"><i>click here.</i></a></li>
       </ol>
     </div>
     <div id="uage" className="container">
