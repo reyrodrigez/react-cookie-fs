@@ -1,4 +1,3 @@
-![](https://img.shields.io/npm/v/react-cookie-fs)
 # React Cookie Feature Switch
 
 Cookie based feature switching using React Context API
