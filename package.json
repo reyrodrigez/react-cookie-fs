@@ -34,7 +34,7 @@
     "react": "16.x"
   },
   "devDependencies": {
-    "jest-environment-jsdom": "^24.8.0",
+    "jest-environment-jsdom": "^25.2.3",
     "jest-environment-jsdom-global": "^1.2.0"
   },
   "jest": {
